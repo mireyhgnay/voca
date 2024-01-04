@@ -1,18 +1,8 @@
-import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import useFecth from "../hooks/useFecth";
 
 export default function DayList() {
-  const [days, setDays] = useState([]);
-
-  useEffect(() => {
-    fetch("http://localhost:3001/days")
-      .then((res) => {
-        return res.json();
-      })
-      .then((data) => {
-        setDays(data);
-      });
-  }, []); // 첫 렌더링 이후 한번만 api를 호출해주면 된다.
+  const days = useFecth("http://localhost:3001/days");
 
   return (
     <div>
