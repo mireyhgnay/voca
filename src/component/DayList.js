@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
-import useFecth from "../hooks/useFecth";
+import useFetch from "../hooks/useFetch";
 
 export default function DayList() {
-  const days = useFecth("http://localhost:3001/days");
+  const days = useFetch("http://localhost:3001/days");
 
   return (
     <div>

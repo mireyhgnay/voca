@@ -73,6 +73,20 @@
       "kor": "사과",
       "isDone": false,
       "id": 12
+    },
+    {
+      "day": "1",
+      "eng": "singer",
+      "kor": "가수",
+      "isDone": false,
+      "id": 13
+    },
+    {
+      "day": "1",
+      "eng": "cookie",
+      "kor": "쿠키",
+      "isDone": false,
+      "id": 14
     }
   ]
 }
