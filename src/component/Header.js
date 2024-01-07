@@ -10,7 +10,7 @@ export default function Header() {
         <a href="/create_word" className="link">
           단어 추가
         </a>
-        <a href="#x" className="link">
+        <a href="/create_day" className="link">
           Day 추가
         </a>
       </div>
