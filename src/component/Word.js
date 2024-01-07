@@ -10,7 +10,18 @@ export default function Word({ word }) {
   }
 
   function toggleDone() {
-    setIsDone(!isDone);
+    fetch(`http://localhost:3001/words/${word.id}`, {
+      method: "PUT", // 수정
+      headers: {
+        "Content-Type": "application/json", // json형태로 보냅니다.
+      },
+      body: JSON.stringify({
+        ...word,
+        isDone: !isDone,
+      }),
+    }).then((res) => {
+      if (res.ok) setIsDone(!isDone);
+    });
   }
 
   return (
