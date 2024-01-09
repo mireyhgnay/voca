@@ -20,3 +20,12 @@ React로 CRUD 구현!
 npm i
 npm start
 ```
+
+<br>
+
+### json server
+
+```bash
+npm i -g json-server
+json-server --watch ./src/db/data.json --port 3001
+```
